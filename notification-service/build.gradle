@@ -26,6 +26,15 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
     implementation 'jakarta.persistence:jakarta.persistence-api:3.1.0'
     runtimeOnly 'org.postgresql:postgresql:42.7.3'
+    implementation 'org.springframework.boot:spring-boot-starter-amqp'
+    // Java Mail
+    implementation("org.springframework.boot:spring-boot-starter-mail")
+
+    // WebSocket
+    implementation("org.springframework.boot:spring-boot-starter-websocket")
+
+    // Telegram API (lightweight)
+    implementation("org.telegram:telegrambots-spring-boot-starter:6.7.0")
 }
 
 tasks.named('test') {
