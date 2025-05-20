@@ -37,6 +37,9 @@ dependencies {
 	implementation 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-client'
 	implementation 'org.springframework.cloud:spring-cloud-starter-openfeign'
 	
+	// Common Module
+	implementation 'org.aldousdev:common:0.0.1-SNAPSHOT'
+
 	// Database
 	runtimeOnly 'org.postgresql:postgresql'
 	
@@ -46,6 +49,8 @@ dependencies {
 	
 	// Test
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    
+
 }
 
 dependencyManagement {
