@@ -6,6 +6,7 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import java.math.BigDecimal;
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.UUID;
 
@@ -26,6 +27,6 @@ public class Sale {
     private double totalRevenue;
     private double totalCost;
     private double profit;
-    private LocalDateTime saleDate;
+    private LocalDate saleDate;
     private UUID orderId;
 }
