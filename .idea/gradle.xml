@@ -7,6 +7,11 @@
         <compositeConfiguration>
           <compositeBuild compositeDefinitionSource="SCRIPT">
             <builds>
+              <build path="$PROJECT_DIR$/analytics-service" name="analytics-service">
+                <projects>
+                  <project path="$PROJECT_DIR$/analytics-service" />
+                </projects>
+              </build>
               <build path="$PROJECT_DIR$/api-gateway" name="api-gateway">
                 <projects>
                   <project path="$PROJECT_DIR$/api-gateway" />
@@ -20,6 +25,11 @@
               <build path="$PROJECT_DIR$/common" name="common">
                 <projects>
                   <project path="$PROJECT_DIR$/common" />
+                </projects>
+              </build>
+              <build path="$PROJECT_DIR$/expense-service" name="expense-service">
+                <projects>
+                  <project path="$PROJECT_DIR$/expense-service" />
                 </projects>
               </build>
               <build path="$PROJECT_DIR$/media-service" name="media-service">
@@ -65,9 +75,11 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/analytics-service" />
             <option value="$PROJECT_DIR$/api-gateway" />
             <option value="$PROJECT_DIR$/auth-service" />
             <option value="$PROJECT_DIR$/common" />
+            <option value="$PROJECT_DIR$/expense-service" />
             <option value="$PROJECT_DIR$/media-service" />
             <option value="$PROJECT_DIR$/notification-service" />
             <option value="$PROJECT_DIR$/order-service" />
@@ -75,6 +87,14 @@
             <option value="$PROJECT_DIR$/service-discovery" />
             <option value="$PROJECT_DIR$/staff-service" />
             <option value="$PROJECT_DIR$/user-service" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/analytics-service" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/analytics-service" />
           </set>
         </option>
       </GradleProjectSettings>
@@ -99,6 +119,14 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/common" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/expense-service" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/expense-service" />
           </set>
         </option>
       </GradleProjectSettings>

@@ -20,4 +20,6 @@ includeBuild 'media-service' //7
 
 includeBuild 'common' //10
 
-includeBuild 'expense-service'
+includeBuild 'expense-service' //11
+
+includeBuild 'analytics-service'
