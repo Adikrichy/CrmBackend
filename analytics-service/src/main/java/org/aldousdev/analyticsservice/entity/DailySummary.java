@@ -10,6 +10,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.math.BigDecimal;
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.UUID;
 
@@ -23,7 +24,7 @@ public class DailySummary {
     @GeneratedValue(strategy = GenerationType.UUID)
     private UUID id;
     private UUID userId;
-    private LocalDateTime date;
+    private LocalDate date;
 
     private int totalSalesCount;
     private int totalProductsSold;

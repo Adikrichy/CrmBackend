@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.UUID;
 
 public interface SummaryService {
-    List<DailySummary> generateDailySummary(UUID userId, LocalDate date);
-    List<DailySummary> getDailySummary(UUID userId, LocalDate date);
+    DailySummary generateDailySummary(UUID userId, LocalDate date);
+    DailySummary getDailySummary(UUID userId, LocalDate date);
     List<DailySummary> getSummaryBetween(UUID userId, LocalDate start, LocalDate end);
 }
